@@ -1,16 +1,16 @@
 import React from "react";
 import { FiSearch, FiMapPin } from "react-icons/fi";
+import bgImg from "../asserts/bg.png"
 
 const MainPage = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-[95vh]"
+      className="relative bg-cover bg-center h-[95vh] mx-0"
       style={{
-        backgroundImage:
-          "url('https://s3-alpha-sig.figma.com/img/4df9/f396/c8b4ef806609efd227c6672c5dba3716?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gBRDD07NEtomnqqICw1c1L84zr1mvk9jFSjxItK4Fh6m-VdGsc7eokJ3jkAaItGO0lWHCoPLQHt5Zmj0tfeIHZXakwjHqj8-8sWqk~DMIjHNrAj86~yB331UitE107JvsSyCug7fOVM3U3AzBzf1uRcoAn4gu7V65FVg8wL0D~TSPHG2GmD~Pu5eJSG1TgODIjttsbMl~cZQRf7eLJVzjNO84W7rJ~oFlVMf-vCDzkajJrGMoVX9rhOlyMkYyofKsSQBOIjoLtWpQLxcQqqNHHvGkjuHo5pXGJgs8rfdDVcTxSpz9AyePtmVuFSXqPwxYhjrSps9zpYD7lZMnZMLBg__')",
+        backgroundImage: `url(${bgImg})`,
       }}
     >
-      <div className="absolute inset-0 bg-blue-950 opacity-85"></div> {/* Blue overlay */}
+      <div className="absolute inset-0 bg-blue-950 opacity-85"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 md:px-0">
         <h1 className="text-2xl md:text-4xl font-bold">Are You a Supplier?</h1>
@@ -24,7 +24,7 @@ const MainPage = () => {
             <input
               type="text"
               placeholder="Search your required service here"
-              className="pl-10 pr-4 py-3 rounded-lg w-[400px] h-[56px] bg-white text-gray-800 outline-none" // Set width and height
+              className="pl-10 pr-4 py-3 rounded-lg w-[400px] h-[56px] bg-white text-gray-800 outline-none"
             />
           </div>
 
@@ -35,7 +35,7 @@ const MainPage = () => {
             <input
               type="text"
               placeholder="Search your desired location here"
-              className="pl-10 pr-4 py-3 rounded-lg w-[400px] h-[56px] bg-white text-gray-800 outline-none" // Set width and height
+              className="pl-10 pr-4 py-3 rounded-lg w-[400px] h-[56px] bg-white text-gray-800 outline-none"
             />
           </div>
 
@@ -47,12 +47,12 @@ const MainPage = () => {
         <div className="mt-6 text-gray-200 text-sm md:text-base">
           <p>
             Are you a buyer?{" "}
-            <a
-              href="#"
-              className="underline text-green-400 hover:text-green-300"
+            <button
+              onClick={() => alert("Redirect to buyer requirement post page")}
+              className="underline text-green-400 hover:text-green-300 cursor-pointer"
             >
               Click here if you are looking to post a requirement
-            </a>
+            </button>
           </p>
         </div>
       </div>

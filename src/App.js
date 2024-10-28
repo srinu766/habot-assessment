@@ -17,7 +17,6 @@ const App = () => {
       <FindSuppliersSection/>
       <HowItWorks/>
       <Footer/>
-     
     </div>
   );
 };

@@ -22,14 +22,10 @@ const Footer = () => {
               <h3 className="text-lg font-medium">Company</h3>
               <ul className="text-sm mt-2 space-y-1">
                 <li>
-                  <a href="#" className="hover:underline">
-                    About
-                  </a>
+                  <button className="hover:underline text-left">About</button>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    FAQ
-                  </a>
+                  <button className="hover:underline text-left">FAQ</button>
                 </li>
               </ul>
             </div>
@@ -39,19 +35,13 @@ const Footer = () => {
               <h3 className="text-lg font-medium">Terms</h3>
               <ul className="text-sm mt-2 space-y-1">
                 <li>
-                  <a href="#" className="hover:underline">
-                    Data privacy
-                  </a>
+                  <button className="hover:underline text-left">Data privacy</button>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Terms
-                  </a>
+                  <button className="hover:underline text-left">Terms</button>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Accessibility
-                  </a>
+                  <button className="hover:underline text-left">Accessibility</button>
                 </li>
               </ul>
             </div>
@@ -61,14 +51,10 @@ const Footer = () => {
               <h3 className="text-lg font-medium">Related</h3>
               <ul className="text-sm mt-2 space-y-1">
                 <li>
-                  <a href="#" className="hover:underline">
-                    Find Buyer
-                  </a>
+                  <button className="hover:underline text-left">Find Buyer</button>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Feedback
-                  </a>
+                  <button className="hover:underline text-left">Feedback</button>
                 </li>
               </ul>
             </div>
@@ -77,16 +63,16 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" className="text-gray-400 hover:text-white">
+          <a href="https://linkedin.com" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={20} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          <a href="https://twitter.com" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
             <FaTwitter size={20} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          <a href="https://facebook.com" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={20} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          <a href="https://instagram.com" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={20} />
           </a>
         </div>
